@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # API  token and Endpoint URL
-API_KEY=${1:-"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"}
+API_KEY=${1:-"YOUR_API_KEY"}
 ENDPOINT_URL=${2:-"https://api.openai.com/v1/completions"}
 
 install_dependencies() {
