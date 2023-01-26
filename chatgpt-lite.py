@@ -10,7 +10,7 @@ banner = """
 def main():
     os.system("clear")
     print(banner)
-    openai.api_key = "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"
+    openai.api_key = "YOUR_API_KEY"
 
     while True:
         query = input("@You > ")
