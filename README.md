@@ -11,57 +11,31 @@
 Copy-paste this into your terminal:
 
 ```sh
-sudo curl -fsSL https://raw.githubusercontent.com/mkdirlove/osfetch/main/osfetch -o /usr/bin/osfetch
+git clone https://github.com/mkdirlove/chatgpt-lite.git
 ```
 ```
-sudo chmod +x /usr/bin/osfetch
+cd chatgpt-lite
 ```
 ```
-osfetch
+bash chatgpt-lite.sh
 ```
+or
+```
+python3 chatgpt-lite.py
+```
+### Then edit file to match your config
 
-#### Termux Installation:
+If you don't have an API key, you can create at https://beta.openai.com/account/api-keys
 
-Copy & Paste this in Termux:
+```python
+# Open chatgpt-lite.py on any code editor and go to line 13 then put your API key.
+def main():
+    os.system("clear")
+    print(banner)
+    openai.api_key = "YOUR_API_KEY"
 
+```
 ```sh
-curl -fsSL https://raw.githubusercontent.com/mkdirlove/osfetch/main/osfetch -o /data/data/com.termux/files/usr/bin/osfetch
+# Open chatgpt-lite.sh on any code editor and go to line 4 then put your API key.
+API_KEY=${1:-"YOUR_API_KEY"}
 ```
-```
-chmod a+x /data/data/com.termux/files/usr/bin/osfetch
-```
-```
-osfetch
-```
-
-#### One liner command without installing:
-
-Note that this will ***not*** install the program.
-```sh
-curl -fsSL https://raw.githubusercontent.com/mkdirlove/osfetch/main/osfetch | sh
-```
-
-### Features:
-- Cross Platform
-- Lightweight
-- Portable
-- POSIX
-
-### Supported Operating Systems:
-- Debian based Linux
-- Ubuntu based Linux
-- Arch based Linux
-- RedHat based Linux
-- SUSE based Linux
-- Bedrock Linux
-- Alpine Linux
-- KISS Linux
-- Void Linux
-- Gentoo Linux
-- Exherbo Linux
-- NixOS Linux
-- Solus Linux
-- yiffOS Linux
-- Slackware Linux\*
-- macOS 10.x + 11.x
-- Android (Termux)
