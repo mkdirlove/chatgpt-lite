@@ -6,7 +6,7 @@
   <br>
 </h1>
 
-#### Installation and Usage:
+#### Installation and Usage
 
 Copy-paste this into your terminal:
 
